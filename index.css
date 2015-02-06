@@ -1,2 +1,5 @@
 h1 {font-family: cursive;}
-p{font-family: monospace;}    
+p {font-family: inherit;}
+a {text-decoration: none; font-family: monospace; color: grey; }
+a:hover {color:blue;}
+a:vlink {text-decoration-color: none;}
