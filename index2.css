@@ -1,2 +1,5 @@
-img.car {width:200px; height: auto;}
-img.bike {width:100px; height: auto;}
+a {text-decoration: none; font-family: monospace; color: black; }
+a:hover {color: grey;}
+a:vlink {text-decoration-color: none;}
+img.car {width: 200px; height:auto;}
+img.bike {width: 100px; height:auto;}
