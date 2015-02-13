@@ -1,0 +1,94 @@
+/*
+
+Resources:
+
+Learn more about colors here:
+- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+Having trouble with overriding rules? Learn about CSS specificity:
+
+- http://specificity.keegan.st/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+For more challenge, try using gradients!
+- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_gradients
+
+Want to change more about how it looks? See the full list of
+SVG Presentation Attributes:
+
+- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute#Presentation_attributes
+
+*/
+ 
+.avatar {
+    /* this sets default styles for everything in the avatar group */
+    stroke-width: 5;
+    fill: white;
+    stroke: black;
+}
+ 
+.body {
+    
+	fill: #fbe6e2;
+    
+}
+ 
+.eye {
+    fill: #3366FF;
+}
+ 
+.arm {
+}
+ 
+.shoe {
+    fill: purple;
+    stroke-width:6px;
+}
+ 
+.left {
+}
+ 
+.right {
+}
+ 
+#head {
+ 
+}
+ 
+#right-eye {
+}
+ 
+#left-eye {
+}
+ 
+#neck {
+}
+ 
+#shirt {
+    fill: green;
+    stroke-width: 10px;
+}
+ 
+#cape {
+    fill: red;
+}
+ 
+#mouth {
+}
+ 
+#pants {
+    fill:#262626;
+    stroke-width: 10px;
+}
+ 
+#left-arm {
+}
+ 
+#right-arm {
+}
+ 
+#left-shoe {
+}
+ 
+#right-shoe {
+}
