@@ -1,6 +1,6 @@
 h1 {font-family: cursive;}
 p {font-family: inherit;}
-a {text-decoration: none; font-family: monospace; color: white; }
+a { text-decoration: none; font-family: monospace; color: white; }
 a:hover {color: grey;}
 a:vlink {text-decoration-color: none;}
 body {background-color: #2F5168 ;
@@ -8,5 +8,6 @@ background-image: -webkit-linear-gradient(#2F5168, #5696BC);
   background-image: -o-linear-gradient(#2F5168, #5696BC);
   background-image: -moz-linear-gradient(#2F5168, #5696BC);
   background-image: linear-gradient(#2F5168, #5696BC);}
-img {width: 600px;}
+img {width: 800px;}
+a.links {font-size: 24px;}
 
