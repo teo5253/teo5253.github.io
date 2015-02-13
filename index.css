@@ -3,5 +3,7 @@ p {font-family: inherit;}
 a {text-decoration: none; font-family: monospace; color: white; }
 a:hover {color: grey;}
 a:vlink {text-decoration-color: none;}
-body {background-color: #666699;}
+body {background-color: #2F5168 ;background-image: linear-gradient(#2F5168, #5696BC);}
 img {width: 600px;}
+
+
