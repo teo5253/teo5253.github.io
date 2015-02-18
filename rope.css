@@ -1,0 +1,4 @@
+a {text-decoration: none; color: black;}
+a:hover {color: grey;}
+a:vlink {text-decoration-color: none;}
+img {width:300px; height:auto;}
