@@ -1,6 +1,6 @@
 /*global $*/
 /*jslint sloppy:true, browser: true, white: true*/
-$("h1.page-title").text("My code runs!");
+$("h1.page-title").text("Click Anywhere!");
 $(window).on('click', function (e) {
     $('img.logo').css({left: e.pageX,
                        top: e.pageY});
