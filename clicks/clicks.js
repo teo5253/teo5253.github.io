@@ -5,7 +5,11 @@ $(window).on('click', function (e) {
     $('img.logo').css({left: e.pageX,
                        top: e.pageY});
 });
-
+$(window).on('click', function (e) {
+    $('.logo').css({left: e.pageX,
+                    top: e.pageY});
+    $('.logo').toggleClass('rotated');
+});
 
 
 
