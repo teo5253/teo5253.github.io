@@ -11,6 +11,4 @@
     margin-top: -64px;
     transition: 1s;
 }
-.rotated {
-    transform: rotate(360deg);
-}
+
