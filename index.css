@@ -1,4 +1,4 @@
-h1 {font-family: cursive;}
+h1 {font-family: monospace;}
 p {font-family: inherit;}
 a { text-decoration: none; font-family: monospace; color: white; }
 a:hover {color: grey;}
