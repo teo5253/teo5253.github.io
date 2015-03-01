@@ -1,4 +1,4 @@
-h1 {font-family: monospace;}
+h1 {font-family: cursive;}
 p {font-family: inherit;}
 a { text-decoration: none; font-family: monospace; color: white; }
 a:hover {color: grey;}
@@ -9,5 +9,11 @@ background-image: -webkit-linear-gradient(#2F5168, #5696BC);
   background-image: -moz-linear-gradient(#2F5168, #5696BC);
   background-image: linear-gradient(#2F5168, #5696BC);}
 img {width: 800px;}
-a.links {font-size: 24px;}
+a.links {font-size: 150%;}
+div.title, div.intro, div.remix {
+    text-align: center;
+}
+div.links {
+    text-align: center;
+}
 
