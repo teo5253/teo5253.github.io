@@ -2,4 +2,7 @@ a {text-decoration: none; color: black;}
 a:hover {color: grey;}
 a:vlink {text-decoration-color: none;}
 img {width:150px; height:auto;}
+div {
+    text-align: center;
+}
 

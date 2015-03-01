@@ -8,7 +8,7 @@ background-image: -webkit-linear-gradient(#2F5168, #5696BC);
   background-image: -o-linear-gradient(#2F5168, #5696BC);
   background-image: -moz-linear-gradient(#2F5168, #5696BC);
   background-image: linear-gradient(#2F5168, #5696BC);}
-img {width: 800px;}
+img {width: 75%;}
 a.links {font-size: 150%;}
 div.title, div.intro, div.remix {
     text-align: center;
