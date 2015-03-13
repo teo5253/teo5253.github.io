@@ -110,7 +110,7 @@ var mainState = {
             this.sprite.body.velocity.y = -145;
         }
         // gives floor illusion of movement
-        this.floor.tilePosition.x -= 100;
+        this.floor.tilePosition.x -= 97;
         // check for collisions
         if (game.physics.arcade.collide(this.sprite, this.obstacles)) {
             console.log('Game over man, game over!');
