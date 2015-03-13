@@ -1,8 +1,16 @@
 .title {
     text-align: center;
+    background-color: mediumaquamarine;
+    margin: 20px, 0px;
+    padding: 10px;
+    
 }
 
 .game-area canvas {
-    border: 1px dashed #ccc;
+    border: 5px solid black;
     margin: 0 auto;
+}
+
+body {
+    background-image: url(images/bg.jpg);
 }
