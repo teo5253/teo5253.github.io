@@ -7,7 +7,7 @@ function makePipePair(group, offsetX, newOffsetX) {
     var top = group.create(0, 0, 'pipe_top');
     var bottom = group.create(0, 0, 'pipe_bottom');
     top.anchor.set(0, 1);
-    var spacing = 125;
+    var spacing = 90;
     function addPhysics(pipe) {
         game.physics.enable(pipe);
         pipe.body.immovable = true;
@@ -54,12 +54,17 @@ var mainState = {
         // loads bottom pipe
         game.load.image('pipe_bottom', 'images/pipe_bottom.png');
         game.load.image('game_over', 'images/game_over.png');
+        game.load.image('back', 'images/back.png');
     },
     
     // CREATE FUNCTION
     create: function () {
         // This function is called after the preload function
         // Here we set up the game, display sprites, etc.
+        
+        // Change background color to a pic  
+        this.back = game.add.sprite(game.world.centerX, game.world.centerY, 'back');
+        this.back.anchor.setTo(0.5, 0.5);
         
         // Create a game sprite from the logo image positioned
         // at the center of the game world
@@ -70,8 +75,6 @@ var mainState = {
         // This is the animation of the spritesheet
         this.sprite.animations.add('flap', [0,1,2,1], 10, true);
         this.sprite.animations.play('flap');
-        // Change background color to a gray color
-        game.stage.backgroundColor = '#999999';
         // These are the Physics of it all
         game.physics.enable(this.sprite);
         game.physics.arcade.gravity.y = 200;
@@ -89,7 +92,7 @@ var mainState = {
         this.floor.body.immovable = true;
         this.floor.body.allowGravity = false;
         //pipes
-        var pipeSpacing = 550  ;
+        var pipeSpacing = 500;
         var numPipes = 10;
         for(var i = 0; i < numPipes; i++) {
             makePipePair(this.obstacles, i * pipeSpacing, pipeSpacing * numPipes - game.world.width);
@@ -104,10 +107,10 @@ var mainState = {
         
         // Controls the birds velocity
         if (game.input.keyboard.justPressed(Phaser.Keyboard.SPACEBAR)) {
-            this.sprite.body.velocity.y = -100;
+            this.sprite.body.velocity.y = -145;
         }
         // gives floor illusion of movement
-        this.floor.tilePosition.x -= 100;
+        this.floor.tilePosition.x -= 97;
         // check for collisions
         if (game.physics.arcade.collide(this.sprite, this.obstacles)) {
             console.log('Game over man, game over!');

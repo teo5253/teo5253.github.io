@@ -1,8 +1,17 @@
 .title {
     text-align: center;
+    background-color: mediumaquamarine;
+    margin: 30px -10px;
+    padding: 10px;
+    font-family: Comic Sans MS;
+    opacity: 0.9;
 }
 
 .game-area canvas {
-    border: 1px dashed #ccc;
+    border: 5px solid black;
     margin: 0 auto;
+}
+
+body {
+    background-image: url(images/bg.jpg);
 }
