@@ -77,7 +77,7 @@ var mainState = {
         this.sprite.animations.play('flap');
         // These are the Physics of it all
         game.physics.enable(this.sprite);
-        game.physics.arcade.gravity.y = 200;
+        game.physics.arcade.gravity.y = 175;
         // Stop bird from falling off screen for now
         this.sprite.body.collideWorldBounds = true;
         // keep spacebar from scrolling the page
@@ -116,7 +116,7 @@ var mainState = {
             console.log('Game over man, game over!');
             this.game_over = game.add.sprite(game.world.centerX, game.world.centerY, 'game_over');
             this.game_over .anchor.setTo(0.5, 0.5);
-            game.paused = true;
+            game.paused = true;   
         }
             
                                             
@@ -124,7 +124,7 @@ var mainState = {
 };
 
 // Initialize Phaser
-game = new Phaser.Game(640, 480, Phaser.AUTO, 'gameDiv');
+game = new Phaser.Game(700, 500  , Phaser.AUTO, 'gameDiv');
 
 // And finally we tell Phaser to add and start our 'main' state
 game.state.add('main', mainState);
