@@ -7,7 +7,7 @@ function makePipePair(group, offsetX, newOffsetX) {
     var top = group.create(0, 0, 'pipe_top');
     var bottom = group.create(0, 0, 'pipe_bottom');
     top.anchor.set(0, 1);
-    var spacing = 90;
+    var spacing = 115;
     function addPhysics(pipe) {
         game.physics.enable(pipe);
         pipe.body.immovable = true;
@@ -92,7 +92,7 @@ var mainState = {
         this.floor.body.immovable = true;
         this.floor.body.allowGravity = false;
         //pipes
-        var pipeSpacing = 500;
+        var pipeSpacing = 600;
         var numPipes = 10;
         for(var i = 0; i < numPipes; i++) {
             makePipePair(this.obstacles, i * pipeSpacing, pipeSpacing * numPipes - game.world.width);
@@ -107,7 +107,7 @@ var mainState = {
         
         // Controls the birds velocity
         if (game.input.keyboard.justPressed(Phaser.Keyboard.SPACEBAR)) {
-            this.sprite.body.velocity.y = -145;
+            this.sprite.body.velocity.y = -130;
         }
         // gives floor illusion of movement
         this.floor.tilePosition.x -= 97;
