@@ -1,19 +1,23 @@
-h1 {font-family: cursive;}
-p {font-family: inherit;}
-a { text-decoration: none; font-family: monospace; color: white; }
-a:hover {color: grey;}
-a:vlink {text-decoration-color: none;}
-body {background-color: #2F5168 ;
-background-image: -webkit-linear-gradient(#2F5168, #5696BC);
-  background-image: -o-linear-gradient(#2F5168, #5696BC);
-  background-image: -moz-linear-gradient(#2F5168, #5696BC);
-  background-image: linear-gradient(#2F5168, #5696BC);}
-img {width: 75%;}
-a.links {font-size: 150%;}
-div.title, div.intro, div.remix {
-    text-align: center;
+* {
+    font-family: trebuchet;
+    color: whitesmoke;
+    margin: 5px 5px;
+    padding: 5px;
+    text-align: left;
 }
-div.links {
-    text-align: center;
+
+body {
+    background-color: turquoise;
+}
+
+div {
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+div img {
+    width: 50%;
+    height: auto;
 }
 
