@@ -16,8 +16,7 @@ div {
     opacity: 0.8;
 }
 
-div img {
-    width: 50%;
-    height: auto;
-}
+img {
+    width: 250px;
+    height: 250px;
 
