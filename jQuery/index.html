@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css" rel="stylesheet">
+            * {
+                margin: 0px 2px;
+                padding: 0px;
+                line-height: 100%;
+            }
+            #erase {
+                width: 200px;
+                height: 40px;
+                background-color:lightpink;
+                font-family: Courier;
+                display: inline-block;
+                border-radius: 10px;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                border: 2px solid black;
+            }
+            #draw {
+                width: 200px;
+                height: 40px;
+                background-color:lightgrey;
+                font-family: Courier;
+                display: inline-block;
+                border-radius: 10px;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                border: 2px solid black;
+            }
+            #red {
+                background-color: red;
+            }
+            #orange {
+                background-color: orange;
+            }
+            #yellow {
+                background-color: yellow;
+            }
+            #green {
+                background-color: green;
+            }
+            #blue {
+                background-color: blue;
+            }
+            #purple {
+                background-color: purple;
+            }
+            #black {
+                background-color: black;
+            }
+            .color {
+                width: 40px;
+                height: 40px;
+                font-family: Courier;
+                display: inline-block;
+                border-radius: 100px;
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+                border: 2px solid black;
+            }
+            .block {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            .clicked {
+                width: 30px;
+                height: 30px;
+                font-family: Courier;
+                display: inline-block;
+            }
+            .navbar {
+                position: fixed;
+            }
+            
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            var bgclr = 'grey';
+            $(document).ready(function() {
+                for(i = 0; i < 5001; i++) {
+                    $('<div class="block"></div>').appendTo('.hi');
+                };
+                $('div.block').css('background-color', bgclr);
+                $('#red').click(function() {
+                    bgclr = 'red';
+                });
+                $('#orange').click(function() {
+                    bgclr = 'orange';
+                });
+                $('#yellow').click(function() {
+                    bgclr = 'yellow';
+                });
+                $('#green').click(function() {
+                    bgclr = 'green';
+                });
+                $('#blue').click(function() {
+                    bgclr = 'blue';
+                });
+                $('#purple').click(function() {
+                    bgclr = 'purple';
+                });
+                $('#black').click(function() {
+                    bgclr = 'black';
+                });
+                $('div.block').click(function() {
+                    $(this).css('background-color', bgclr);
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div id="draw"><h1>Paintbrush</h1></div>
+            <div id="erase"><h1>Eraser</h1></div>
+            <div class="color" id="red"></div>
+            <div class="color" id="orange"></div>
+            <div class="color" id="yellow"></div>
+            <div class="color" id="green"></div>
+            <div class="color" id="blue"></div>
+            <div class="color" id="purple"></div>
+            <div class="color" id="black"></div>
+        </div>
+        <div class="hi"></div>
+    </body>
+</html>
