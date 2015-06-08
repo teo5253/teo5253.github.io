@@ -7,7 +7,7 @@
                 padding: 0px;
                 line-height: 100%;
             }
-            #erase {
+            .erase {
                 width: 200px;
                 height: 40px;
                 background-color:lightpink;
@@ -108,6 +108,9 @@
                 $('#black').click(function() {
                     bgclr = 'black';
                 });
+                $('#erase').click(function() {
+                    bgclr = 'azure';
+                });
                 $('div.block').click(function() {
                     $(this).css('background-color', bgclr);
                 });
@@ -117,8 +120,7 @@
     </head>
     <body>
         <div class="navbar">
-            <div id="draw"><h1>Paintbrush</h1></div>
-            <div id="erase"><h1>Eraser</h1></div>
+            <div class="erase" id="erase"><h1>Eraser</h1></div>
             <div class="color" id="red"></div>
             <div class="color" id="orange"></div>
             <div class="color" id="yellow"></div>
