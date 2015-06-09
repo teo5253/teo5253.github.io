@@ -53,8 +53,8 @@
                 background-color: black;
             }
             .color {
-                width: 40px;
-                height: 40px;
+                width: 80px;
+                height: 80px;
                 font-family: Courier;
                 display: inline-block;
                 border-radius: 100px;
@@ -82,6 +82,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             var bgclr = 'lightgrey';
+            
+            var color = $('div.block').mousedown(function() {
+                    $(this).css('background-color', bgclr);
+                    });
+                
+            var firstclick = $('div.block').hover(function() {
+                $(this).css('background-color', bgclr);
+            });
+                
+            var secondclick = $('div.block').hover(function() {
+                $(this).css('background-color', 'none');
+            });
             $(document).ready(function() {
                 for(i = 0; i < 5001; i++) {
                     $('<div class="block"></div>').appendTo('.hi');
@@ -111,22 +123,15 @@
                 $('#erase').click(function() {
                     bgclr = 'lightgrey';
                 });
+                
                 $('div.block').mousedown(function() {
                     $(this).css('background-color', bgclr);
                 });
-                /*$('div.block').toggle(
-                    function() {
-                        $('div.block').hover(function() {
-                            $(this).css('background-color', bgclr);    
-                            });
-                    },
-                    function() {
-                        $('div.block').hover(function() {
-                            $(this).css('background-color', 'lightgrey');    
-                            });
-                    };
-                );*/
+                
+                //$( "div.block" ).selectable( "enable" );
             });
+                    
+            
             
         </script>
     </head>
