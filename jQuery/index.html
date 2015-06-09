@@ -111,19 +111,21 @@
                 $('#erase').click(function() {
                     bgclr = 'lightgrey';
                 });
-                $('div.block').toggle(function() {
-                    $('div.block').click(function() {
-                        $('div.block').hover(function() {
-                            $(this).css('background-color', bgclr);   
-                        });
-                    }),
-                    $('div.block').click(function() {
-                        $('div.block').hover(function() {
-                            $(this).css('background-color', bgclr);   
-                        });
-                    });
-                        
+                $('div.block').mousedown(function() {
+                    $(this).css('background-color', bgclr);
                 });
+                /*$('div.block').toggle(
+                    function() {
+                        $('div.block').hover(function() {
+                            $(this).css('background-color', bgclr);    
+                            });
+                    },
+                    function() {
+                        $('div.block').hover(function() {
+                            $(this).css('background-color', 'lightgrey');    
+                            });
+                    };
+                );*/
             });
             
         </script>
