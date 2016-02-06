@@ -1,11 +1,5 @@
-
-.blackwhite {
-  background-color: black;
-  border: 5px solid white;
-}
-
 h1, h2 {
-    font-family: fantasy;
+    font-family: monospace;
     text-align: center;
     color: palevioletred;
 }

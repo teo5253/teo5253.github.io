@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('div').click(function() {
-        $(this).addClass('blackwhite');
+        $(this).html('<img href="firstpic.jpeg" />');
         };
     });
 });
