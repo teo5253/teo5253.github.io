@@ -1,11 +1,11 @@
-first<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Six Months &lt;3</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <style>
         h1, h2 {
-            font-family: monospace;
+            font-family: Impact, Charcoal, sans-serif;
             text-align: center;
             color: palevioletred;
         }
@@ -28,7 +28,11 @@ first<!DOCTYPE html>
             <h1>From: Mateo</h1>
         </div>
         <script>
-        
+        $(document).ready(function() {
+          $('div').click(function() {
+            $(this).html('<img src="images/firstpic.jpeg" />')
+          });
+        });
         </script>
     </body>
 </html>
