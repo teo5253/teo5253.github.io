@@ -10,12 +10,16 @@
             color: palevioletred;
         }
 
-        div {
+        .pic {
             border: 5px solid palevioletred;
             border-radius: 10px;
             margin: 10px;
             padding: 5px;
             display: inline-block;
+        }
+
+        #rows {
+          display: grid;
         }
 
         body {
@@ -26,13 +30,20 @@
         img {
           border-radius: 10px;
         }
+
+        hr {
+          color: palevioletred;
+        }
         </style>
     </head>
     <body>
-        <div>
+      <h1>Click on each one to see the full story.</h1>
+      <div id="rows">
+        <div class="pic">
             <img src="images/firstpic.jpg" width="244.8px" height("326.4px")>
             <p>This is the first picture of you and me.</p>
         </div>
+      </div>
         <script>
         $(document).ready(function() {
           $('div').click(function() {
