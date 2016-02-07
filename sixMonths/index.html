@@ -15,10 +15,12 @@
             border-radius: 10px;
             margin: 10px;
             padding: 5px;
+            display: inline-block;
         }
 
         body {
             background-color: pink;
+            display: inline-block;
         }
 
         img {
@@ -28,13 +30,12 @@
     </head>
     <body>
         <div>
-            <h1>To: Anna</h1>
-            <h1>From: Mateo</h1>
+            <img src="images/firstpic.jpg" width="244.8px" height("326.4px")>
+            <p>This is the first picture of you and me.</p>
         </div>
         <script>
         $(document).ready(function() {
           $('div').click(function() {
-            $(this).html('<img src="images/firstpic.jpg" width="244.8px" height("326.4px")><p>This is the first picture of you and me.').css('display', 'inline-block')
           });
         });
         </script>
