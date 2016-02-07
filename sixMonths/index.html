@@ -15,7 +15,7 @@
           margin: 0px;
         }
 
-        .pic {
+        .pic, .para {
             border: 5px solid palevioletred;
             border-radius: 10px;
             margin: 5px;
@@ -23,7 +23,11 @@
             display: inline-block;
         }
 
-        #rows {
+        .para {
+          width: 244.8px;
+        }
+
+        .rows {
           display: grid;
         }
 
@@ -38,25 +42,46 @@
     </head>
     <body>
       <h1>The Story of Us.. So Far.</h1>
-      <div id="rows">
-        <div class="pic">
+      <div class="rows">
+        <div class="pic" id="first">
             <img src="images/firstpic.jpg" width="244.8px" height("326.4px")>
             <p>The first picture of you and me.</p>
         </div>
-        <div class="pic">
+        <div class="para" id="first">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+        </div>
+        <div class="pic" id="laughshorter">
             <img src="images/laugh.jpg" width="244.8px" height("326.4px")>
             <img src="images/shorter.jpg" width="244.8px" height("326.4px")>
             <p>Reunited after 4 months.</p>
         </div>
+        <div class="para" id="laughshorter">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+        </div>
       </div>
         <script>
         $(document).ready(function() {
-          $('.pic').mouseenter(function() {
+          $('.para').hide();
+          $('.pic, .para').mouseenter(function() {
             $(this).css('opacity', '.5');
           });
-          $('.pic').mouseleave(function() {
+          $('.pic, .para').mouseleave(function() {
             $(this).css('opacity', '1');
           });
+          function tog(pic, para) {
+            $(pic).click(function() {
+              $(this).hide('slow', function() {
+                $(para).fadeTo('slow', 1);
+              });
+            });
+            $(para).click(function() {
+              $(this).hide('slow', function() {
+                $(pic).fadeTo('slow', 1);
+              });
+            });
+          };
+          tog('#first.pic', '#first.para');
+          tog('#laughshorter.pic', '#laughshorter.para');
         });
         </script>
     </body>
