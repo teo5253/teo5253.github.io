@@ -73,13 +73,13 @@
           });
           function tog(pic, para) {
             $(pic).click(function() {
-              $(this).hide('fast', function() {
-                $(para).fadeTo('fast', 1);
+              $(this).hide('slow', function() {
+                $(para).fadeTo('slow', 1);
               });
             });
             $(para).click(function() {
-              $(this).hide('fast', function() {
-                $(pic).fadeTo('fast', 1);
+              $(this).hide('slow', function() {
+                $(pic).fadeTo('slow', 1);
               });
             });
           };
