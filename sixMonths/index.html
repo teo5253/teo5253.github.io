@@ -51,7 +51,11 @@
       </div>
         <script>
         $(document).ready(function() {
-          $('div').click(function() {
+          $('.pic').mouseenter(function() {
+            $(this).css('opacity', '.5');
+          });
+          $('.pic').mouseleave(function() {
+            $(this).css('opacity', '1');
           });
         });
         </script>
